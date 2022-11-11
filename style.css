@@ -1,0 +1,35 @@
+body {
+  background-color: #6f97d9;
+}
+
+.main {
+  width: 70%;
+  margin: 100px;
+  margin-top: 30px;
+  border-style: solid;
+  border-color: #7e8787;
+}
+
+.languageInput {
+  height: 200px;
+  text-align: top;
+  width: 40%;
+}
+
+.languageSelection {
+  position: absolute;
+  margin: 5px;
+  margin-top: 30px;
+  float: left;
+  border-style: solid;
+  border-color: #7e8787;
+  width: 12%;
+  height: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.language {
+  border-radius: 2px;
+  width: 95%;
+}
