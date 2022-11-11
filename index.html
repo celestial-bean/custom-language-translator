@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+    <title>secret language creator</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <center>
+      <input id="language seed" type="text" placeholder="language seed">
+
+      <div class="languageSelection">
+        <button id="new" onclick="newLanguage()" style="position: absolute; left: 0px;top:0px; font-size: 13px;">+</button><br>
+        <div id="languages">
+
+        </div>
+      </div>
+      <div class="main">
+        <div width=100% style="padding-left: 15%; padding-right: 15%">
+
+          <a style="float:left">Input:</a>
+          <a style="float:right">Output:</a>
+          <br />
+        </div>
+
+
+        <textarea id="input" class="languageInput"></textarea>
+        <textarea class="languageInput"></textarea>
+        <br>
+        <button style="background-color: #378f25; border-radius: 10px; width:10%; color:white; font-size: 15px" onlick="update()">
+          GO
+        </button>
+      </div>
+
+    </center>
+
+
+  </body>
+  <script src="script.js"></script>
+
+</html>
