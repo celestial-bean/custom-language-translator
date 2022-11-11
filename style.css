@@ -1,6 +1,5 @@
 body {
   background-color: #6f97d9;
-  color: black;
 }
 
 .main {
@@ -17,6 +16,7 @@ body {
   width: 40%;
   resize: none;
   overflow: auto;
+  background-color: #ffffff;
 }
 
 .languageSelection {
@@ -30,6 +30,9 @@ body {
   height: auto;
   padding-top: 5px;
   padding-bottom: 5px;
+  background-color: #ffffff;
+}
+.languages{
   background-color: #ffffff;
 }
 
