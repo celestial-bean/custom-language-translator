@@ -17,6 +17,7 @@ function newLanguage() {
 
 //apply things
   remove.textContent="-";
+  remove.style.float="right";
   button.classList.add("language");
   button.textContent = `language ${languages}`;
   remove.addEventListener("click", function(){this.parentElement.remove(); languages--;})

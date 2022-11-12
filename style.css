@@ -1,7 +1,10 @@
 body {
   background-color: #6f97d9;
 }
-
+button{
+  background-color:#ffffff;
+  color:#000000;
+}
 .main {
   width: 70%;
   margin: 100px;
