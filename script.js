@@ -1,12 +1,20 @@
 
 //init stuff
 let languages = 1;
-let input = document.querySelector("#input");
+let input = document.getElementById("input");
+let output = document.getElementById("output");
 let data={};
+let seedBox=document.getElementById("languageSeed");
 
 
-function translate(){
-  
+function trans(){
+  output.value="";
+  let array=seedBox.value.split("separate");
+  let In=array[0];
+  let Out=array[1];
+  for (let i=0; i<input.value.length;i++){
+  }
+  //input.value
 }
 
 
@@ -19,7 +27,7 @@ function newLanguage() {
   if (!name){
     name="New language";
   }
-  let seedBox=document.getElementById("languageSeed");
+  
   let input=document.getElementById("characterInput").value;
  let output=document.getElementById("characterOutput").value;
  let seed=input+"separate"+output;
