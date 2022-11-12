@@ -4,16 +4,17 @@
   <head>
     <title>secret language creator</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-  </head>
+    <link rel="stylesheet" href="style.css">  
+</head>
 
   <body>
 
     <center>
-      <input id="language seed" style="background-color: #cfcfcf;" type="text" placeholder="language seed">
+      <input id="languageSeed" style="background-color: #cfcfcf;" type="text" placeholder="language seed">
 
       <div class="languageSelection">
-        <button id="new" onclick="newLanguage()" style="color:#000000; position:absolute; left: 0px;top:0px; font-size: 13px;">+</button><br>
+       <!--<br> -->
+       
         <div id="languages" class="languages">
 
         </div>
@@ -35,6 +36,20 @@
         </button>
       </div>
 
+
+
+      <div class="languageCreation">
+        <center>Create a new language</center>
+        <br>
+        <a style="width: 35%; float:left">Input:</a>
+        <a style="width: 35%; float:right">Output:</a>
+        <textarea placeholder="abcdefghijklmnopqrstuvwxyz" id="characterInput" style="height:300px; resize:none" ></textarea>
+        <textarea placeholder="zyxwvutsrqponmlkjihgfedcba" id="characterOutput" style="height:300px; resize:none"></textarea>
+        <br>
+        <input placeholder="Name: Reversed alphabet" id="name"><br>
+        <button id="new" onclick="newLanguage()" style="color:#000000; position:relative; left: 0px; top:0px; font-size: 13px;">Create</button>
+       
+      </div>
     </center>
 
 

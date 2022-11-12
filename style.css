@@ -6,7 +6,7 @@ button{
   color:#000000;
 }
 .main {
-  width: 70%;
+  width: 50%;
   margin: 100px;
   margin-top: 30px;
   border-style: solid;
@@ -29,7 +29,7 @@ button{
   float: left;
   border-style: solid;
   border-color: #7e8787;
-  width: 12%;
+  width: 20%;
   height: auto;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -41,6 +41,16 @@ button{
 
 .language {
   border-radius: 2px;
+  float: left;
   background-color: #858585;
-  width: 95%;
+  width: 60%;
+}
+.edit{
+  height: 20px;
+  width:45px;
+  color: #ffffff;
+  float: right;
+}
+.languageCreation{
+  width:50%;
 }
