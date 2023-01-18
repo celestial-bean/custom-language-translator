@@ -1,6 +1,5 @@
 
-//init stuff
-function main() {
+
   let languages = 1;
   let input = document.getElementById("input");
   let output = document.getElementById("output");
@@ -83,5 +82,4 @@ function main() {
 
 
   }
-}
-main()
+
