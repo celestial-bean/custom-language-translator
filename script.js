@@ -36,7 +36,7 @@
     let remove = document.createElement("button");
     let name = document.getElementById("name").value;
     if (!name) {
-      name = "New language" + languages.toString();
+      name = "New language";
     }
     //check if name is already taken; add a number to it
     let count = 0;
