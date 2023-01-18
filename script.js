@@ -5,14 +5,14 @@ function main() {
   let input = document.getElementById("input");
   let output = document.getElementById("output");
   let data = {};
-  let seedBox = document.getElementById("languageSelector");
+  let selectedLanguage = document.getElementById("languageSelector");
 
 
   function trans() {
     output.value = "";
 
-    let In = data[seedBox.value].input;
-    let Out = data[seedBox.value].output;
+    let In = data[selectedLanguage.value].input;
+    let Out = data[selectedLanguage.value].output;
     if (!In.includes(" ")) {
       In += " ";
     }
@@ -69,7 +69,7 @@ function main() {
     button.classList.add("language");
     button.textContent = name;
     button.addEventListener("click", function() {
-      seedBox.value = data[name].name;
+      selectedLanguage.value = data[name].name;
     });
     remove.addEventListener("click", function() {
       this.parentElement.remove();
