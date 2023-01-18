@@ -1,6 +1,5 @@
-
 //init stuff
-let languages = 1;
+let languages=1;
 let input = document.getElementById("input");
 let output = document.getElementById("output");
 let data={};
@@ -9,27 +8,52 @@ let seedBox=document.getElementById("languageSeed");
 
 function trans(){
   output.value="";
-  let array=seedBox.value.split("separate");
-  let In=array[0];
-  let Out=array[1];
-  for (let i=0; i<input.value.length;i++){
+ 
+  let In=data[seedBox.value].input;
+  let Out=data[seedBox.value].output;
+  if (!In.includes(" ")){
+  In+=" ";
   }
-  //input.value
+   if (!Out.includes(" ")){
+  Out+=" ";
+  }
+ 
+  for (let i=0; i<input.value.length;i++){
+  let char = input.value[i];
+  output.value+=Out[In.indexOf(char)];
+  }
+ 
+  console.log(In)
+  console.log(typeof In)
 }
 
 
 function newLanguage() {
+
+
   //init things
   let div = document.createElement("div");
   let button = document.createElement("button");
   let remove=document.createElement("button");
   let name=document.getElementById("name").value;
   if (!name){
-    name="New language";
+    name="New language"+String(languages);
   }
-  
-  let input=document.getElementById("characterInput").value;
- let output=document.getElementById("characterOutput").value;
+  //check if name is already taken; add a number to it
+let count=0;
+  for (let i=0; i<data.length;i++){
+  if (data.name==name){
+    count+=1;
+    }
+  }
+  if (count){
+  name=name+count.toString();
+  }
+}
+
+ 
+  let input=document.getElementById("characterInput").value.split("");
+ let output=document.getElementById("characterOutput").value.split("");
  let seed=input+"separate"+output;
 
   data[`${name}`]={name: `${name}`, input: `${input}`, output: `${output}`, seed:seed};
@@ -40,14 +64,13 @@ function newLanguage() {
   remove.style.position="relative";
   button.classList.add("language");
   button.textContent = `${name}`;
-  button.addEventListener("click", function(){seedBox.value=data[name].seed;})
+  button.addEventListener("click", function(){seedBox.value=data[name].name;})
   remove.addEventListener("click", function(){this.parentElement.remove();})
 
   //append things
   div.appendChild(button);
   div.append(remove);
   document.querySelector("#languages").appendChild(div);
+  languages+=1;
 
 }
-
-
