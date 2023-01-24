@@ -7,7 +7,7 @@ let data = {};
 let seedBox = document.getElementById("languageSelector");
 
 
-function trans(data) {
+function trans() {
   output.value = "";
 
   let In = data[seedBox.value].input;
@@ -45,7 +45,6 @@ function newLanguage() {
     for (let i = 0; i < Object.keys(data).length; i++) {
       if (data[i].name == name) {
         count += 1;
-        console.log(name);
 
       }
     }
