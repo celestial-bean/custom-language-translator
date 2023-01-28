@@ -34,7 +34,7 @@ function trans(errors=[]) {
   }
 }
 if (errors.length>0){
-  alert("You did not include these in your input: "+errors);
+  alert("You did not include these in your output: "+errors);
   return;
 }
 

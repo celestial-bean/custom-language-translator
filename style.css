@@ -52,5 +52,14 @@ button{
   float: right;
 }
 .languageCreation{
-  width:50%;
+  width:80%;
+  min-height:50%;
+  height:auto;
+}
+#characterInput{
+  min-height:60px;
+  
+}
+#characterOutput{
+  min-height:60px;
 }
